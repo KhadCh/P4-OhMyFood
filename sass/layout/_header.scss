@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    &__logo {
+        margin: 14px 89px;
+        padding: 0 19px 0 16px;
+    }
+
+    &__input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 17px;
+        width: 100%;
+
+        background-color: $senary-color;
+        padding: 17px;
+
+        &--text-input {
+            background: none;
+            border: none;
+            width: auto;
+            
+            @include h2-like;
+        }
+
+        &--location-dot {
+            color: $primary-icon-color;
+        }
+
+
+        
+    }
+
+    &__arrow {
+        position: absolute;
+        left: 17px;
+        
+    }
+
+}
+

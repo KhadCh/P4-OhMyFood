@@ -1,0 +1,22 @@
+
+.btn {
+    border-radius: 25px;
+    color: white;
+    border: none;
+    font-size: $font-size-text;
+    font-weight: $font-weight-bold;
+    cursor: grab;
+    @include primary-gradient;
+    @include drop-shadow;
+    transition-property: transform;
+    transition: 600ms;
+
+    &:hover {
+    //    @include hover-gradient;
+      //  @include hover-drop-shadow;
+      opacity: 0.9;
+      //box-shadow: 0px 0px 15px rgb(165,164,164);
+      @include hover-drop-shadow;
+    }
+}
+

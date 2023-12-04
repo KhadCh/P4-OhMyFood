@@ -1,0 +1,21 @@
+.card {
+    border-radius: 20px;
+    background-color: $hero-color; 
+    
+    
+    @include drop-shadow;
+
+    &--white {
+        @extend .card;
+        background-color: white;
+    }
+    
+}
+
+.card__meals{
+    border-radius: 20px;
+    background-color: $hero-color ; 
+    @include drop-shadow-meals ;
+    padding: 15px;
+
+}
