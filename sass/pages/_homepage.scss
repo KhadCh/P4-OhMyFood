@@ -153,7 +153,7 @@
         &--card {
             position: relative;
             width: 100%;
-
+        
             &:is(.card--nouveaute) {
                 &::before {
                     content: "Nouveau";
@@ -173,6 +173,12 @@
                     @include drop-shadow;
                 }
             }
+            
+            &--like {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+              }
 
             &--img {
                 object-fit: cover;
@@ -202,19 +208,20 @@
     @media (min-width: $max-width) {
         width: 100%;
         padding: 30px 180px;
+        
 
         &__cards {
             flex-direction: row;
             flex-wrap: wrap;
             padding: 28px 0 30px 0;
             gap: 50px 100px;
+            
 
-
-
-            a {
+            &--card {
                 width: 45%;
-
             }
+
+        
         }
     }
 }

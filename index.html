@@ -20,10 +20,16 @@
     
        
     <body>
+       
+         <div class="loader">
+            <span class="loader__element"></span>
+            <span class="loader__element"></span>
+            <span class="loader__element"></span> 
+          </div>   
 
-   
+
          <!-- Header -->
-        <header class="header">
+        <header class="header loader__end ">
             <img class="header__logo" src="assets/images/logo/ohmyfood@2x.svg" alt="Logo du site Ohmyfood">
             <div class="header__input">
                 <i class="fa-solid fa-location-dot header__input--location-dot"></i>
@@ -35,7 +41,7 @@
         </header>
 
 
-        <main>
+        <main class="loader__end">
 
             <div class="main-container">
 
@@ -81,8 +87,9 @@
                 <section class="restaurants">
                     <h1>Restaurants</h1>
                     <div class="restaurants__cards">
-                    <a href="restaurants/restaurant_1.html">
+                   
                         <article class="restaurants__cards--card card--white card--nouveaute">
+                            <a href="restaurants/la-palette-du-gout.html">
                             <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="restaurants__cards--card--img"
                              alt="Image d'un plat de chez La Palette Du Gout">
                             <div class="restaurants__cards--card--content">
@@ -92,10 +99,19 @@
                                 </div>
                             
                             </div>
+                          </a>
+                          <div class="restaurants__cards--card--like">
+                            <input type="checkbox" id="like__input-1" class="like__checkbox">
+                            <label for="like__input-1" class="like__container">
+                                <i class="fa-regular fa-heart heart-icon card__content--heart"></i>
+                                <i class="fa-solid fa-heart heart-icon-solid card__content--heart--filled"></i>
+                            </label>
+                        </div> 
                         </article>
-                    </a>
-                    <a href="restaurants/restaurant_2.html">
+                   
+                   
                         <article class="restaurants__cards--card card--white card--nouveaute">
+                            <a href="restaurants/la-note-enchantee.html">
                             <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" class="restaurants__cards--card--img"
                             alt="Image d'un plat de chez La Note Enchantée">
                             <div class="restaurants__cards--card--content">
@@ -105,10 +121,19 @@
                                 </div>
                          
                             </div>
-                        </article>
                         </a>
-                    <a href="restaurants/restaurant_3.html">
+                            <div class="restaurants__cards--card--like">
+                                <input type="checkbox" id="like__input-2" class="like__checkbox">
+                                <label for="like__input-2" class="like__container">
+                                    <i class="fa-regular fa-heart heart-icon card__content--heart"></i>
+                                    <i class="fa-solid fa-heart heart-icon-solid card__content--heart--filled"></i>
+                                </label>
+                            </div> 
+                        </article>
+                       
+                   
                         <article class="restaurants__cards--card card--white">
+                            <a href="restaurants/a-la-francaise.html">
                             <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" class="restaurants__cards--card--img"
                              alt="Image d'un plat de chez À La Francaise">
                              <div class="restaurants__cards--card--content">
@@ -118,10 +143,19 @@
                                 </div>
                            
                             </div>
+                           </a>
+                           <div class="restaurants__cards--card--like">
+                                <input type="checkbox" id="like__input-3" class="like__checkbox">
+                                <label for="like__input-3" class="like__container">
+                                    <i class="fa-regular fa-heart heart-icon card__content--heart"></i>
+                                    <i class="fa-solid fa-heart heart-icon-solid card__content--heart--filled"></i>
+                                </label>
+                           </div> 
                         </article>
-                    </a>
-                    <a href="restaurants/restaurant_4.html">
+                    
+                   
                         <article class="restaurants__cards--card card--white">
+                            <a href="restaurants/le-delice-des-sens.html">
                             <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" class="restaurants__cards--card--img"
                              alt="Image d'un plat de chez Le Delice Des Sens">
                              <div class="restaurants__cards--card--content">
@@ -131,14 +165,22 @@
                                 </div>
                         
                             </div>
+                        </a>
+                        <div class="restaurants__cards--card--like">
+                            <input type="checkbox" id="like__input-4" class="like__checkbox">
+                            <label for="like__input-4" class="like__container">
+                                <i class="fa-regular fa-heart heart-icon card__content--heart"></i>
+                                <i class="fa-solid fa-heart heart-icon-solid card__content--heart--filled"></i>
+                            </label>
+                        </div> 
                         </article>
-                    </a>
+                    
                 </div>
                 </section>
             </div>
         </main>
 
-        <footer class="footer">
+        <footer class="footer  loader__end  ">
             <h2 class="footer__logo">Ohmyfood</h2>
                     <ul class="footer__nav">
                         <li class="footer__nav--bold"><i class="fa-solid fa-utensils"></i><a href="">Proposer un restaurant</a></li>
