@@ -16,7 +16,9 @@
   justify-content: center;  
   z-index: 1;
 
-  
+  animation: disparition 3s;
+  animation-fill-mode: forwards; 
+
      &__element {
       border-radius: 100%;
       border: var(--size) solid $primary-color;
@@ -36,28 +38,35 @@
 
     }
   
-    animation: fadeOutLoader 1s forwards 2s;
+   
     
-    
+   // animation: OutLoader 1s forwards 2s;
     
 }
     
-
+@keyframes disparition {
+    from{                   //0%
+        visibility: visible;
+    }
+    to{                     //100%
+        visibility: hidden;
+    }
+}
 
 // Fade In Content
- .loader__end {
-  opacity: 0;
-   animation: fadeInContent 1s forwards 2s;
- }
+//  .loader__end {
+//   opacity: 0;
+//    animation: InContent 1s forwards 2s;
+//  }
   
 // Animations
 
-@keyframes fadeInContent {
+@keyframes InContent {
   0% { opacity: 0; }
   100% { opacity: 1; }
 
 }
-  @keyframes fadeOutLoader {
+  @keyframes OutLoader {
     0% { opacity: 1; }
     100% { opacity: 0;}
   }
