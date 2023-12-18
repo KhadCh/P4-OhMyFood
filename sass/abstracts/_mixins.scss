@@ -38,7 +38,7 @@
 @mixin appearAnim($delay) {
     opacity: 0;
     transform: translateX(100%);
-    animation: fadeInUp .7s cubic-bezier(.47,1.64,.41,.8) forwards;
+    animation: fadeInUp .7s forwards;
 
 
     @for $i from 1 through 3{ // 3 bloc
