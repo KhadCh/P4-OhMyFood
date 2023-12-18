@@ -541,7 +541,7 @@ p, .menu--subtitle {
   width: 4em;
   margin-right: -4em;
   border-radius: 0 15px 15px 0;
-  transition: 700ms ease;
+  transition: 400ms ease-in-out;
 }
 .meals__cart__icone {
   color: white;
@@ -552,6 +552,11 @@ p, .menu--subtitle {
 }
 .meals__price {
   padding: 0 15px 15px 15px;
+}
+@media (min-width: 1440px) {
+  .items__meals:hover .meals__cart {
+    margin-right: 0em;
+  }
 }
 
 .entree {
@@ -658,22 +663,6 @@ p, .menu--subtitle {
   }
   to {
     visibility: hidden;
-  }
-}
-@keyframes InContent {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes OutLoader {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 @keyframes preloader {
