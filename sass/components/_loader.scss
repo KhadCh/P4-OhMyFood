@@ -1,6 +1,4 @@
-:root {
- --size: 8px;
-}
+
 .loader {
   background-color: white;
   overflow: hidden;
@@ -19,8 +17,8 @@
 
      &__element {
       border-radius: 100%;
-      border: var(--size) solid $primary-color;
-      margin: calc(var(--size)*2);
+      border: 8px solid $primary-color;
+      margin: calc(8px*2);
 
           &:nth-child(1)  {
             animation: preloader .6s ease-in-out alternate infinite ;
