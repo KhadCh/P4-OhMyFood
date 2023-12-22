@@ -1,8 +1,4 @@
-:root {
 
- 
-  --size: 8px;
-}
 .loader {
   background-color: white;
   overflow: hidden;
@@ -21,13 +17,11 @@
 
      &__element {
       border-radius: 100%;
-      border: var(--size) solid $primary-color;
-      margin: calc(var(--size)*2);
+      border: 8px solid $primary-color;
+      margin: calc(8px*2);
 
           &:nth-child(1)  {
             animation: preloader .6s ease-in-out alternate infinite ;
-          // animation: spin 2s linear infinite, fadeOutLoader .2s 1.9s forwards;
-          //animation: preloader .6s ease-in-out alternate .2s infinite;
           }
            &:nth-child(2) {
             animation: preloader .6s ease-in-out alternate .2s infinite ;
@@ -35,13 +29,7 @@
            &:nth-child(3)  {
              animation: preloader .6s ease-in-out alternate .4s infinite ;         
           }  
-
-    }
-  
-   
-    
-   // animation: OutLoader 1s forwards 2s;
-    
+    }   
 }
     
 @keyframes disparition {
@@ -53,25 +41,10 @@
     }
 }
 
-// Fade In Content
-//  .loader__end {
-//   opacity: 0;
-//    animation: InContent 1s forwards 2s;
-//  }
-  
-// Animations
-
-@keyframes InContent {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-
+@keyframes preloader {
+  100% { transform: scale(2); }
 }
-  @keyframes OutLoader {
-    0% { opacity: 1; }
-    100% { opacity: 0;}
-  }
+
+
     
 
-  @keyframes preloader {
-    100% { transform: scale(2); }
-  }

@@ -179,7 +179,7 @@
         margin-right: -4em;
 
         border-radius: 0 15px 15px 0;
-        transition: 700ms ease;
+        transition: 400ms  ease-in-out;
 
         &__icone {
             color: white;
@@ -194,6 +194,15 @@
     &__price {
         padding: 0 15px 15px 15px;
     }
+
+    @media (min-width: $max-width) { // hover en desktop
+        
+        .items__meals:hover &__cart {
+            margin-right: 0em;
+        }
+    
+  
+      }
 }
 
 @for $i from 0 through 2 {
