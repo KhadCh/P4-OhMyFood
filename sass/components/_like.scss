@@ -27,7 +27,7 @@
     &__checkbox {
         
       &:checked + .like__container {
-        .heart-icon-solid {animation:  like 0.2s cubic-bezier(.87, .01, .38, 1.01) forwards;}      
+        .heart-icon-solid {animation:  like 0.2s cubic-bezier(.87, .01, .38, 1.01) forwards;}       
       }   
 
       &:not(:checked) + .like__container { 
