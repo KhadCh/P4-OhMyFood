@@ -40,13 +40,6 @@
     transform: translateX(100%);
     animation: fadeInUp .7s forwards;
 
-
-    @for $i from 1 through 3{ // 3 bloc
-        &:nth-child(#{$i}) {
-            animation-delay: $delay + 0.2s * $i;
-        }
-    }
-
     @keyframes fadeInUp {
         to {
             opacity: 1;
